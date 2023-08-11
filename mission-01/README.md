@@ -12,4 +12,51 @@
 
 ### [Code-Link](https://github.com/minomad/react-mission/blob/main/mission-01/src/components/Button.jsx)
 
+
+### Button.jsx
+```jsx
+function Button({ children, color }) {
+  let backgroundColor = '';
+
+  if (color === 'primary') {
+    backgroundColor = 'bg-primary';
+  } else if (color === 'secondary') {
+    backgroundColor = 'bg-secondary';
+  } else if (color === 'disabled') {
+    backgroundColor = 'bg-disabledColor';
+  }
+
+  const buttonStyle = `w-[200px] h-10 ${backgroundColor} text-white font-bold rounded-lg`;
+
+  return (
+    <button type="button" className={buttonStyle}>
+      {children}
+    </button>
+  );
+}
+
+export default Button;
+```
+
+### App.jsx
+
+```jsx
+import Button from './components/Button';
+import './App.css';
+
+function App() {
+  return (
+    <div className="flex flex-col items-center py-10 gap-4">
+      <Button color="primary">로그인</Button>
+      <Button color="secondary">회원가입</Button>
+      <Button color="disabled">Disabled</Button>
+    </div>
+  );
+}
+
+export default App;
+
+```
+
+## 결과
 ![components](https://github.com/minomad/minomad/assets/131448929/1c150923-6553-4a78-9cfe-adbb3a495279)
