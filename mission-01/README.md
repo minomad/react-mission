@@ -6,10 +6,10 @@
 
 [Figma-Link](https://www.figma.com/file/VtEftOUNlY2sgLO2DZa4tP/mission-01?type=design&node-id=0%3A1&mode=design&t=vuwixwLdgtUOobrn-1)
 
-![Figma](https://github.com/minomad/Portfolio/assets/131448929/6c5d25bd-9c3c-487e-b6e0-3b0c07ca6c6c)
+![Figma](https://github.com/minomad/minomad/assets/131448929/1899d8c4-d593-4025-8f2d-6df8e6b37525)
 
 ## components
 
 [Code-Link](https://github.com/minomad/react-mission/blob/main/mission-01/src/components/Button.jsx)
 
-![UI](https://github.com/minomad/Portfolio/assets/131448929/9f63f80b-27af-4814-ad04-5543ac8ef036)
+![components](https://github.com/minomad/minomad/assets/131448929/1c150923-6553-4a78-9cfe-adbb3a495279)
