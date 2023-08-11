@@ -6,7 +6,7 @@
 
 ### [Figma-Link](https://www.figma.com/file/VtEftOUNlY2sgLO2DZa4tP/mission-01?type=design&node-id=0%3A1&mode=design&t=vuwixwLdgtUOobrn-1)
 
-![Figma](https://github.com/minomad/minomad/assets/131448929/1899d8c4-d593-4025-8f2d-6df8e6b37525)
+![Figma](https://github.com/minomad/react-mission/assets/131448929/1adea9af-32af-4c83-a57b-431d1ff3ac15)
 
 ## components
 
