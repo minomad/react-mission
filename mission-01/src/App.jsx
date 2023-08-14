@@ -1,12 +1,11 @@
 import Button from './components/Button';
-import './App.css';
 
 function App() {
   return (
     <div className="flex flex-col items-center py-10 gap-4">
-      <Button color="primary">로그인</Button>
-      <Button color="secondary">회원가입</Button>
-      <Button color="disabled">Disabled</Button>
+      <Button type='submit' color="primary">로그인</Button>
+      <Button type='submit' color="secondary">회원가입</Button>
+      <Button type='button' color="disabled">Disabled</Button>
     </div>
   );
 }

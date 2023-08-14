@@ -6,14 +6,14 @@
 
 ### [Figma-Link](https://www.figma.com/file/VtEftOUNlY2sgLO2DZa4tP/mission-01?type=design&node-id=0%3A1&mode=design&t=vuwixwLdgtUOobrn-1)
 
-![Figma](https://github.com/minomad/react-mission/assets/131448929/1adea9af-32af-4c83-a57b-431d1ff3ac15)
+![Figma](https://github.com/minomad/react-mission/assets/131448929/73e7f8ef-c3d0-49ec-bec7-f65fb73404fc)
 
 ## components
 
 ### [Code-Link](https://github.com/minomad/react-mission/blob/main/mission-01/src/components/Button.jsx)
 
-
 ### Button.jsx
+
 ```jsx
 function Button({ children, color }) {
   let backgroundColor = '';
@@ -55,8 +55,8 @@ function App() {
 }
 
 export default App;
-
 ```
 
 ## 결과
-![components](https://github.com/minomad/minomad/assets/131448929/1c150923-6553-4a78-9cfe-adbb3a495279)
+
+![components](https://github.com/minomad/react-mission/assets/131448929/e4509af0-b86c-4b05-90e3-04fa39ff0805)

@@ -1,6 +1,4 @@
-
-function Button({ children, color }) {
-  
+function Button({ children, color, type = 'button' }) {
   let backgroundColor = '';
 
   if (color === 'primary') {
@@ -14,7 +12,7 @@ function Button({ children, color }) {
   const buttonStyle = `w-[200px] h-10 ${backgroundColor} text-white font-bold rounded-lg`;
 
   return (
-    <button type="button" className={buttonStyle}>
+    <button type={type} className={buttonStyle}>
       {children}
     </button>
   );
