@@ -4,9 +4,13 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#3763c9',
+        primary: '#000063',
         secondary: '#3264ff',
-        titleColor: '#000063',
+        navColor: '#9DABCF',
+        grayColor: '#E8EBF5'
+        // primary: '#9DABCF',
+        // secondary: '#3264ff',
+        // titleColor: '#000063',
       },
     },
   },
