@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import data from '@/data/data.json';
-import key from '../config/api'
+import key from '@/config/api'
 
 function useFetchData() {
   const [news, setNews] = useState([]);
