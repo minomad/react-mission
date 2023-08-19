@@ -1,54 +1,40 @@
 import { useState, useEffect } from 'react';
-import { weatherkey, newsKey } from '@/config/apiConfig';
+import data from '@/data/data.json';
+import key from '../config/api'
 
 function useFetchData() {
   const [news, setNews] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('');
-  const [stateNews, setStateNews] = useState();
   const [weather, setWeather] = useState([]);
-  const [stateWeather, setStateWeather] = useState();
-
-  async function fetchNews() {
-    try {
-      setStateNews('loading');
-      const newsResponse = await fetch(
-        `https://newsapi.org/v2/top-headlines?country=kr&category=${selectedCategory}&apiKey=${newsKey}`
-      );
-      const newsData = await newsResponse.json();
-      setNews(newsData.articles);
-      setStateNews('success');
-    } catch (error) {
-      setStateNews('error');
-    }
-  }
+  const [state, setState] = useState('');
 
   async function fetchWeather() {
     try {
-      setStateWeather('loading');
+      setState('loading');
       const weatherResponse = await fetch(
-        `https://api.weatherbit.io/v2.0/forecast/daily?lat=37.5665&lon=126.9780&days=5&key=${weatherkey}`
+        `https://api.weatherbit.io/v2.0/forecast/daily?lat=37.5665&lon=126.9780&days=5&key=${key}`
       );
       const weatherData = await weatherResponse.json();
       setWeather(weatherData.data);
-      setStateWeather('success');
+      setState('success');
     } catch (error) {
-      setStateWeather('error');
+      setState('error');
     }
   }
-
-  useEffect(() => {
-    fetchNews();
-  }, [selectedCategory]);
 
   useEffect(() => {
     fetchWeather();
   }, []);
 
+  useEffect(() => {
+    const category = selectedCategory ? data[selectedCategory] || [] : data.articles;
+    setNews(category);
+  }, [selectedCategory]);
+
   return {
     news,
     weather,
-    stateNews,
-    stateWeather,
+    state,
     selectedCategory,
     setSelectedCategory,
   };

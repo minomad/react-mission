@@ -7,21 +7,17 @@ import useDocumentTitle from '@/hook/useDocumentTitle';
 function WeatherPage() {
   useDocumentTitle('날씨 페이지');
 
-  const { weather, stateWeather } = useFetchData();
+  const { weather, state } = useFetchData();
 
-  if (stateWeather === 'loading') {
+  if (state === 'loading') {
     return <Spinner />;
   }
 
-  if (stateWeather === 'error') {
+  if (state === 'error') {
     return <Error />;
   }
 
-  return (
-    <>
-      <Weather weather={weather} />
-    </>
-  );
+  return <Weather weather={weather} />;
 }
 
 export default WeatherPage;
