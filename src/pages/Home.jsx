@@ -4,7 +4,7 @@ function Home() {
   useDocumentTitle('Home');
 
   return (
-    <section className="min-h-[calc(100vh-52px)] min-[500px]:min-w-[calc(100vh-0px)] ">
+    <section className="min-h-[calc(100vh-52px)] min-[500px]:min-w-[calc(100vh)] ">
       <h2 className="w-full bg-grayColor py-2 text-center text-xl font-semibold text-primary">Home</h2>
       <div className="py-10 text-center text-xl font-semibold text-primary max-[500px]:text-sm">
         <p>환영합니다!</p>

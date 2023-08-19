@@ -11,7 +11,7 @@ function NewsCategory({ selectedCategory, handleChangeCategory }) {
               key={index}
               onClick={() => {
                 handleChangeCategory(category);
-                window.scrollTo({ top:0 });
+                window.scrollTo({ top: 0 });
               }}
               className={`cursor-pointer px-2 transition-transform hover:scale-110 hover:text-secondary ${
                 isActive ? 'border-b-[3px] border-secondary text-secondary' : 'text-gray-600'

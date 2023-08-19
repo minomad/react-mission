@@ -1,10 +1,9 @@
 
 function NewsList({ selectedCategory, news }) {
-  
   const filterNews = news.filter((news) => news.urlToImage !== null && news.description !== null);
 
   return (
-    <section className="flex flex-col items-center px-6">
+    <section className="flex flex-col items-center min-[500px]:min-w-[calc(98vh)]">
       <h2 className="w-full border-y py-2 text-center text-xl font-semibold text-primary">{selectedCategory} 뉴스</h2>
       <ul className="pt-5">
         {filterNews.map((newsItem, index) => {
@@ -20,7 +19,7 @@ function NewsList({ selectedCategory, news }) {
                   alt={selectedCategory}
                   className="float-left mr-5 h-24 w-40 rounded max-[400px]:hidden"
                 />
-                <div className="flex h-24 flex-col md:w-[36rem]">
+                <div className="flex h-24 flex-col md:w-[35rem]">
                   <strong className="line-clamp-1 text-ellipsis text-lg text-primary hover:underline">
                     {newsItem.title}
                   </strong>

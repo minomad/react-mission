@@ -1,11 +1,11 @@
 
 function Weather({ weather }) {
   return (
-    <section className="flex min-h-[calc(100vh-52px)] flex-col items-center text-primary ">
-      <h2 className="bg-grayColor w-full py-2 text-center text-xl font-semibold ">서울 날씨</h2>
+    <section className="flex min-h-[calc(100vh-52px)] flex-col items-center text-primary min-[500px]:min-w-[calc(100vh)]">
+      <h2 className="w-full bg-grayColor py-2 text-center text-xl font-semibold ">서울 날씨</h2>
       <div className="my-2 flex justify-center px-[16px] pt-5 max-[500px]:flex-col">
         {weather.map((weather) => (
-          <div key={weather.datetime} className="flex flex-col items-center px-5 max-[500px]:border-t border-teal-800">
+          <div key={weather.datetime} className="flex flex-col items-center border-teal-800 px-4 max-[500px]:border-t">
             <p className="pb-4 font-semibold">{weather.datetime.slice(5, 10)}</p>
             {weather.weather.description.includes('rain') ? (
               <img src="/rain.png" alt="비" />

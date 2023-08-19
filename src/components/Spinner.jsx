@@ -1,7 +1,7 @@
 
 function Spinner() {
   return (
-    <figure className="flex flex-col items-center p-24 min-[500px]:min-h-[calc(100vh-52px)] min-[500px]:min-w-[calc(100vh-15px)]">
+    <figure className="flex flex-col items-center p-24 min-[500px]:min-h-[calc(100vh-52px)] min-[500px]:min-w-[calc(100vh)]">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="100"
