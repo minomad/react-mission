@@ -1,5 +1,3 @@
-# react-mission
+# 과제-02
 
-- [mission-01](https://github.com/minomad/react-mission/tree/main/mission-01)
-
-
+>
