@@ -8,9 +8,6 @@ export default {
         secondary: '#3264ff',
         navColor: '#9DABCF',
         grayColor: '#E8EBF5'
-        // primary: '#9DABCF',
-        // secondary: '#3264ff',
-        // titleColor: '#000063',
       },
     },
   },

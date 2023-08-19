@@ -3,7 +3,7 @@ import { useId } from 'react';
 function NewsList({ selectedCategory, news }) {
   const filterNews = news.filter((news) => news.urlToImage !== null && news.description !== null);
 
-  const maxNews = filterNews.slice(0, 10);
+  const maxNews = filterNews.slice(0, 15);
   return (
     <section className="flex flex-col items-center px-6">
       <h2 className="w-full border-y py-2 text-center text-xl font-semibold text-primary">{selectedCategory} news</h2>
