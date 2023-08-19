@@ -3,7 +3,7 @@ function NewsList({ selectedCategory, news }) {
   const filterNews = news.filter((news) => news.urlToImage !== null && news.description !== null);
 
   return (
-    <section className="flex flex-col items-center min-[500px]:min-w-[calc(98vh)]">
+    <section className="flex min-h-[calc(100vh-52px)] flex-col items-center min-[500px]:min-w-[calc(98vh)]">
       <h2 className="w-full border-y py-2 text-center text-xl font-semibold text-primary">{selectedCategory} 뉴스</h2>
       <ul className="pt-5">
         {filterNews.map((newsItem, index) => {

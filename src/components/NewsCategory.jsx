@@ -1,3 +1,4 @@
+
 function NewsCategory({ selectedCategory, handleChangeCategory }) {
   const newsCategory = ['스포츠', '연예', '사회', '건강', '과학', '기술'];
 

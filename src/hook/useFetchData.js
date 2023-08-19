@@ -27,7 +27,7 @@ function useFetchData() {
   }, []);
 
   useEffect(() => {
-    const category = selectedCategory ? data[selectedCategory] || [] : data.articles;
+    const category = selectedCategory ? data[selectedCategory] : data.articles;
     setNews(category);
   }, [selectedCategory]);
 
