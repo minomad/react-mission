@@ -129,4 +129,4 @@ useFetchData훅에서 weatherAPI 데이터를 요청하고 받아온 데이터�
 
 ## Build
 
-![Build](https://github.com/minomad/react-mission/assets/131448929/bec82ada-4b36-417b-a1cd-1dc458163669)
+![Build](https://github.com/minomad/react-mission/assets/131448929/76d24905-2d6c-49a3-85ad-f109f2db3b6b)
