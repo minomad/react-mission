@@ -65,6 +65,8 @@ export default useFetchData;
 useFetchData훅에서 뉴스, 날씨 데이터를 가져오고 상태도 관리했습니다.  
 newsAPI를 로컬서버에서는 데이터 요청이 가능했으나 배포환경에서는 데이터를 요청할 수 없어서 newsAPI의 data를 json파일에 담아서 불러왔습니다. (무료버전 이슈...)
 
+---
+
 ### NewsPage
 
 ```jsx
@@ -92,6 +94,8 @@ export default NewsPage;
 NewsCategory에서 선택한 카테고리가 변경될 때마다 해당 카테고리에 맞는 뉴스 데이터를 news상태에 저장하고
 
 NewsList 컴포넌트에서 news를 전달받아서 리스트 렌더링했습니다.
+
+---
 
 ### WeatherPage
 
