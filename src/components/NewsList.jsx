@@ -1,6 +1,5 @@
 
 function NewsList({ selectedCategory, news }) {
-
   return (
     <section className="flex min-h-[calc(100vh-52px)] flex-col items-center min-[500px]:min-w-[calc(98vh)]">
       <h2 className="w-full border-y py-2 text-center text-xl font-semibold text-primary">{selectedCategory} 뉴스</h2>
@@ -9,7 +8,7 @@ function NewsList({ selectedCategory, news }) {
           return (
             <li key={index} className="pb-5 transition-transform hover:scale-105">
               <button
-                onClick={() => window.open(newsItem.url, '_blank')}
+                onClick={() => window.open(newsItem.url, '_blank', 'noopener noreferrer')}
                 title="클릭시 해당 기사(유튜브) 페이지로 이동합니다."
                 className="text-left"
               >
