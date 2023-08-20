@@ -70,6 +70,8 @@ newsAPI를 로컬서버에서는 데이터 요청이 가능했으나 배포환�
 ### NewsPage
 
 ```jsx
+import Error from '@/components/Error';
+import Spinner from '@/components/Spinner';
 import NewsList from '@/components/NewsList';
 import useFetchData from '@/hook/useFetchData';
 import NewsCategory from '@/components/NewsCategory';
@@ -78,7 +80,15 @@ import useDocumentTitle from '@/hook/useDocumentTitle';
 function NewsPage() {
   useDocumentTitle('뉴스 페이지');
 
-  const { news, selectedCategory, setSelectedCategory } = useFetchData('');
+  const { news, state, selectedCategory, setSelectedCategory } = useFetchData('');
+
+  if (state === 'loading') {
+    return <Spinner />;
+  }
+
+  if (state === 'error') {
+    return <Error />;
+  }
 
   return (
     <>
@@ -129,7 +139,7 @@ useFetchData훅에서 weatherAPI 데이터를 요청하고 받아온 데이터�
 
 ## Build
 
-![Build](https://github.com/minomad/react-mission/assets/131448929/8cabefab-f456-44e2-baf7-f6dc3c352a77)
+![Build](https://github.com/minomad/react-mission/assets/131448929/d6d2fd1e-4417-4707-9761-f26a27cd6e61)
 
 ## mobile
 
