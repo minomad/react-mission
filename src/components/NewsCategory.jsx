@@ -1,10 +1,9 @@
-
 function NewsCategory({ selectedCategory, handleChangeCategory }) {
   const newsCategory = ['스포츠', '연예', '사회', '건강', '과학', '기술'];
 
   return (
     <div className="sticky top-0 z-10 bg-grayColor p-2" role="NewsCategory">
-      <ul className="flex flex-row flex-wrap justify-center gap-4 p-1 text-xl font-semibold max-[550px]:w-fit">
+      <ul className="flex flex-row justify-center gap-4 whitespace-nowrap p-1 text-xl font-semibold max-[500px]:gap-2">
         {newsCategory.map((category, index) => {
           const isActive = selectedCategory === category;
           return (

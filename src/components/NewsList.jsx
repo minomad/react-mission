@@ -5,7 +5,7 @@ function NewsList({ selectedCategory, news }) {
   return (
     <section className="flex min-h-[calc(100vh-52px)] flex-col items-center min-[500px]:min-w-[calc(98vh)]">
       <h2 className="w-full border-y py-2 text-center text-xl font-semibold text-primary">{selectedCategory} 뉴스</h2>
-      <ul className="pt-5">
+      <ul className="pt-5 max-[550px]:px-4">
         {filterNews.map((newsItem, index) => {
           return (
             <li key={index} className="pb-5 transition-transform hover:scale-105">
@@ -17,9 +17,9 @@ function NewsList({ selectedCategory, news }) {
                 <img
                   src={newsItem.urlToImage}
                   alt={selectedCategory}
-                  className="float-left mr-5 h-24 w-40 rounded max-[400px]:hidden"
+                  className="float-left mr-5 h-24 w-40 rounded max-[500px]:hidden"
                 />
-                <div className="flex h-24 flex-col md:w-[35rem]">
+                <div className="flex h-24 flex-col max-[500px]:w-80 md:w-[35rem]">
                   <strong className="line-clamp-1 text-ellipsis text-lg text-primary hover:underline">
                     {newsItem.title}
                   </strong>
